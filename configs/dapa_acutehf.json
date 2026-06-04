@@ -1,0 +1,8 @@
+{
+  "drug": "Dapa Acute HF",
+  "drug_lower": "dapa acute hf",
+  "condition": "Adults hospitalized with acute decompensated",
+  "slug": "dapa_acutehf",
+  "source_repo": "C:\\Projects\\Dapa_AcuteHF_LivingMeta",
+  "source_html": "DAPA_ACUTE_HF_REVIEW.html"
+}
