@@ -33160,10 +33160,10 @@ const AnalysisEngine = {
                     document.getElementById('patient-plain-text').textContent = nntValue
 
 
-                        ? `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ' + (RapidMeta.state.protocol?.int || 'the intervention') + ' showed a meaningful benefit. For every ${nntValue} patients treated, approximately 1 additional patient was prevented from having ${outcomeText}.`
+                        ? `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ${RapidMeta.state.protocol?.int || 'the intervention'} showed a meaningful benefit. For every ${nntValue} patients treated, approximately 1 additional patient was prevented from having ${outcomeText}.`
 
 
-                        : `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ' + (RapidMeta.state.protocol?.int || 'the intervention') + ' showed a meaningful benefit.`;
+                        : `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ${RapidMeta.state.protocol?.int || 'the intervention'} showed a meaningful benefit.`;
 
 
                     document.getElementById('patient-nnt-visual').textContent = nntValue ? `Approximately ${nntValue} patients need treatment to prevent 1 event` : '';
@@ -33187,10 +33187,10 @@ const AnalysisEngine = {
                     document.getElementById('patient-plain-text').textContent = nnhValue
 
 
-                        ? `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ' + (RapidMeta.state.protocol?.int ?? 'The intervention') + ' was associated with more ${outcomeText}. For about every ${nnhValue} patients treated, 1 additional event occurred.`
+                        ? `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ${RapidMeta.state.protocol?.int ?? 'the intervention'} was associated with more ${outcomeText}. For about every ${nnhValue} patients treated, 1 additional event occurred.`
 
 
-                        : `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ' + (RapidMeta.state.protocol?.int ?? 'The intervention') + ' was associated with more ${outcomeText}.`;
+                        : `Across ${k} large clinical trials involving ${totalN.toLocaleString()} patients, ${RapidMeta.state.protocol?.int ?? 'the intervention'} was associated with more ${outcomeText}.`;
 
 
                     document.getElementById('patient-nnt-visual').textContent = nnhValue ? `Approximately 1 extra event occurred for every ${nnhValue} patients treated` : '';
